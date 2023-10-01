@@ -6,20 +6,21 @@
 
 body {
   display: flex;
-  background-color: #100720;
+  background-color: #100720;;
   color: rgb(153, 248, 216);
 }
 
-a {
+.navbar a {
   width: 50px;
   height: 50px;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 0;
   text-decoration: nome;
   color:rgb(153, 248, 216);
 }
 
-a:hover{
+.navbar a:hover{
   text-decoration: nome;
   color:rgb(153, 248, 216);
 }
