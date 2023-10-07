@@ -6,7 +6,8 @@
 
 body {
   display: flex;
-  background-color: #100720;;
+  background-color: #100720;
+  ;
   color: rgb(153, 248, 216);
 }
 
@@ -101,7 +102,6 @@ span {
 }
 
 .myCard {
-  background-color: transparent;
   width: 290px;
   height: 354px;
   perspective: 1000px;
@@ -123,22 +123,45 @@ span {
   transform: rotateY(180deg);
 }
 
-.myCard img{
-  width: 65px;
-  height: 50px;
+.imgCard {
+  width: 85px;
+  height: 45px;
 }
 
-.myCard p{
+.imgCard2 {
+  width: 45px;
+  height: 45px;
+}
+
+.imgCard3 {
+  width: 45px;
+  height: 45px;
+}
+
+.Tel {
+  color: aliceblue;
+}
+
+.Tel:hover {
+  color: rgb(153, 248, 216);
+  text-shadow: 0px 0px 10px rgba(153, 248, 216, 0.573), 0px 0px 10px rgb(153, 248, 216);
+}
+
+.myCard p {
   font-size: 24px;
   margin-top: 5%;
 }
 
-.myCard a{
+.myCard a {
   text-decoration: none;
   color: aliceblue;
 }
 
-.myCard a:hover{
+.linkCard3 {
+  font-size: 24px;
+}
+
+.myCard a:hover {
   color: rgb(153, 248, 216);
   text-shadow: 0px 0px 10px rgba(153, 248, 216, 0.573), 0px 0px 10px rgb(153, 248, 216);
 }
@@ -155,19 +178,22 @@ span {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgb(153, 248, 216);
-  border-radius: 1rem;
   color: aliceblue;
   font-weight: 700;
 }
 
 .frontSide,
 .frontSide::before {
-  background: #100720;;
+  background: rgba(153, 248, 216, 0.0300);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .backSide,
 .backSide::before {
-  background:#100720;
+  background: rgba(153, 248, 216, 0.0300);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .backSide {
@@ -184,7 +210,6 @@ span {
   height: 100%;
   position: absolute;
   z-index: -1;
-  border-radius: 1em;
   animation: animate 5s linear infinite;
 }
 
@@ -194,7 +219,7 @@ span {
   }
 
   80% {
-    opacity: 1;
+    opacity: 0.3;
   }
 
   100% {
