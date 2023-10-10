@@ -83,6 +83,15 @@ header {
   font-size: 20px;
 }
 
+#toggleButton:hover{
+  color: rgb(153, 248, 216);
+  text-shadow: 0px 0px 10px rgba(153, 248, 216, 0.573), 0px 0px 10px rgb(153, 248, 216);
+}
+
+#toggleButton:focus{
+  outline: none;
+}
+
 #sidebar {
   height: 0;
   width: 0;
@@ -115,4 +124,9 @@ header {
   flex: 1;
   padding: 20px;
   border: 1px solid aliceblue;
+}
+
+.linkProjetos:hover{
+  color:  #FA52B7;
+  text-shadow: 0px 0px 10px  #fa52b78b, 0px 0px 10px  #FA52B7;
 }
